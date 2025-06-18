@@ -26,7 +26,7 @@ def download_video(url: str) -> str:
         return ydl.prepare_filename(info)
 
 # Xabar qabul qilish (YouTube/Instagram havola)
-@dp.message()
+@dp.message()   
 async def handle_video(message: Message):
     url = message.text.strip()
 
